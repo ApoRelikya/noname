@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página inicial</title>
+    <style>
+        body {font-family: Arial, sans-serif;
+      background-color: #c2c2c2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-container {
+        background: rgb(255, 255, 255);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 300px;
+      text-align: center;
+    }
+    .login-container h2 {
+        margin-bottom: 1rem;}
+
+        .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: 90%;
+      padding: 0.6rem;
+      margin-bottom: 1rem;
+      border: 1px solid #c7c7c7;
+      border-radius: 5px;
+    }
+    .login-container button {
+      width: 90%;
+      padding: 0.6rem;
+      background-color: #347057;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;}
+
+      .login-container button:hover {
+      background-color: #218838;
+    }
+    .login-container .register {
+      margin-top: 1rem;
+      display: block;
+      color: #11991c;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .login-container .register:hover {
+      text-decoration: underline;
+    }
+    </style>
+</head>
+<body>
+     <div class="login-container">
+        <h3>Bem-vindo ao Alpha Tester</h3>
+        <input type="text" id="login" placeholder="Nome" maxlength="14" />
+        <input type="password" id="senha" placeholder="Senha" maxlength="50"/>
+        <button id="btnEntrar">Entrar</button>
+        <a href="Cadastro.html" class="register">Cadastre-se</a>
+
+      </div>
+      <script> src="js/Login.js"</script>
+</body>
+</html>
